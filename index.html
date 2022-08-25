@@ -44,8 +44,8 @@
           <div class="inputGroup">
             <label for="sexo">SEXO:</label>
             <select id="sexo" name="sexo">
-              <option value="Masculino">Masculino</option>
-              <option value="Feminino">Feminino</option>
+              <option value="MASCULINO">Masculino</option>
+              <option value="FEMININO">Feminino</option>
             </select>
           </div>
 
@@ -80,7 +80,7 @@
 
       <!-- Inicio dos Resultados -->
       <div class="resultados">
-        <div class="cima">
+        <div class="cima" id="cima">
           <div class="nomeIdade">
             <h1 id="nome_tela"></h1>
             <h1 id="idade_tela"></h1>
@@ -99,7 +99,7 @@
 
       <!-- Fim dos Resultados -->
 
-      <button onclick="downloadPDF()">Gerar PDF</button>
+      <button onclick="downloadPDF()" id="pdf"> <img src="images/Vector.svg" alt=""> Gerar PDF</button>
     </div>
     <script src="js/main.js"></script>
   </body>

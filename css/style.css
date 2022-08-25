@@ -13,9 +13,11 @@
 }
 
 .container {
+  padding: 20px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 10px;
 }
 
 h1 {
@@ -102,16 +104,93 @@ padding: 10px 0;
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   border-radius: 8px;
   color: #FCFCF4;
 }
 
+.cima{
 
+display: flex;
+flex-direction: column;
+align-items: center;
+row-gap: 5px;
+border-bottom: 1px solid #1a1535;
+padding-bottom: 10px;
+margin-bottom: 10px;
+
+}
 #nome_tela{
 
 
 
     color: #1a1535;
     font-weight: 700;
+}
+
+#idade_tela, #sexo_tela{
+
+color: #fcfcf4;
+
+}
+
+#sexo_tela{
+
+font-weight: 400;
+font-size: 16px;
+
+}
+
+.nomeIdade{
+
+display: flex;
+
+}
+
+
+.pesoAltura{
+  display: flex;
+
+}
+
+#altura_tela, #peso_tela{
+
+
+  color: #1a1535;
+}
+
+#resultado{
+  color: #1A1535;
+  font-weight: 700;
+  font-size: 96px;
+
+
+}
+
+#pdf{
+
+  border: 0;
+width: 96vw;
+padding: 0px 20px;
+background-color: #FCFCF4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+padding: 10px 0;
+
+  font-size: 32px;
+  color: #1a1535;
+  font-weight: 900;
+}
+
+
+#pdf img{
+
+
+border-right: 3px solid #1A1535;;
+padding-right: 5px;
+margin-right: 5px;
+
 }
