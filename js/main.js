@@ -1,9 +1,9 @@
-window.onload = () => {
-    "use strict";
-    if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("./sw.js");
-    }
-};
+// window.onload = () => {
+//     "use strict";
+//     if ("serviceWorker" in navigator) {
+//         navigator.serviceWorker.register("./sw.js");
+//     }
+// };
 
 
 function calcular() {
@@ -19,8 +19,8 @@ function calcular() {
     soma = peso / (altura * altura);
 
 
-    nome_tela.textContent = nome;
-    idade_tela.textContent = idade;
+    nome_tela.textContent = nome + ",";
+    idade_tela.textContent = idade + " anos";
     sexo_tela.textContent = sexo;
    altura_tela.textContent = altura;
    peso_tela.textContent =  peso;
@@ -61,3 +61,18 @@ function limpar() {
     const altura = document.getElementById("altura").value = "";
 
 }
+
+function downloadPDF() {
+    const item = document.querySelector(".resultados");
+    const nome = document.getElementById("nome").value;
+    const fileName = nome + '.pdf'
+  
+    var opt = {
+      margin: 0,
+      filename: fileName,
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+    };
+  
+    html2pdf().set(opt).from(item).save();
+  }

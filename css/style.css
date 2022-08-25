@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.fullscreen {
+  background-color: #1a1535;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #d077ab;
+}
+
+.campos {
+  display: flex;
+  width: 90vw;
+flex-direction: column;
+  background-color: #302a4e;
+  border-radius: 8px;
+
+  padding: 30px 20px;
+  row-gap: 10px;
+}
+
+.campos label {
+  color: #fcfcf4;
+  font-weight: 400;
+}
+
+
+.campos input, select{
+border: none;
+border-radius: 6px;
+background-color: #FCFCF4;
+padding: 10px 4px;
+
+outline: none;
+
+color: #1a1535;
+font-weight: 600;
+
+}
+.inputs{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+row-gap: 10px;
+
+}
+
+.inputGroup{
+
+display: flex;
+flex-direction: column;
+width: 40%;
+row-gap: 10px;
+
+
+}
+
+#calcular{
+
+background-color: #d077ab;
+color: #FCFCF4;
+border: none;
+font-weight: 600;
+font-size: 20px;
+border-radius: 8px;
+
+padding: 10px 0;
+
+
+}
+
+#limpar{
+
+border: 2px solid #d077ab;
+background: transparent;
+
+color: #FCFCF4;
+font-size: 16px;
+border-radius: 8px;
+padding: 10px 0;
+
+}
+.resultados {
+  background-color: #ff8dd0;
+  width: 90vw;
+  padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 8px;
+  color: #FCFCF4;
+}
+
+
+#nome_tela{
+
+
+
+    color: #1a1535;
+    font-weight: 700;
+}

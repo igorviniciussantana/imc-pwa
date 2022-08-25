@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Calculadora de imc</title>
     <link rel="apple-touch-icon" href="" />
@@ -10,44 +9,98 @@
     <!--viewport para designers responsivos (mobo), content é a configuração-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="white" />
-</head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
 
-<body class="fullscreen">
-
+  <body class="fullscreen">
     <div class="container">
-        <label for="nome">Nome:</label><input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+      <h1>Calculadora IMC</h1>
 
-        <label for="idade">Idade:</label><input type="text" id="idade" name="idade" placeholder="Digite sua idade">
+      <!-- Inicio dos Inputs -->
+      <div class="campos">
+        <label for="nome">NOME:</label
+        ><input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome"
+        />
 
-        <label for="sexo">Sexo:</label> <select id="sexo" name="sexo">
-            <option value="bota"></option>
-            <option value="Masculino">Masculino</option>
-            <option value="Feminino">Feminino</option>
+        <div class="inputs">
+          <div class="inputGroup">
+            <label for="idade">IDADE:</label
+            ><input
+              type="text"
+              id="idade"
+              name="idade"
+              placeholder="Digite sua idade"
+            />
+          </div>
+          <div class="inputGroup">
+            <label for="sexo">SEXO:</label>
+            <select id="sexo" name="sexo">
+              <option value="Masculino">Masculino</option>
+              <option value="Feminino">Feminino</option>
+            </select>
+          </div>
 
-        </select>
+          <div class="inputGroup">
+            <label for="altura">ALTURA:</label
+            ><input
+              type="number"
+              id="altura"
+              name="altura"
+              placeholder="Digite sua altura"
+            />
+          </div>
+          <div class="inputGroup">
+            <label for="peso">PESO:</label
+            ><input
+              type="number"
+              id="peso"
+              name="peso"
+              placeholder="Digite seu peso"
+            />
+          </div>
+        </div>
+        <button id="calcular" type="button" onclick="calcular()">
+          Calcular IMC
+        </button>
 
-        <label for="altura">Altura:</label><input type="number" id="altura" name="altura"
-            placeholder="Digite sua altura">
+        <button id="limpar" type="button" onclick="limpar()">
+          Limpar Campos
+        </button>
+      </div>
+      <!-- Fim dos Inputs -->
 
-        <label for="peso">Peso:</label><input type="number" id="peso" name="peso" placeholder="Digite seu peso">
-
-        <button id="calcular" type="button" onclick="calcular()">Calcular imc</button>
-
-        <button id="limpar" type="button" onclick="limpar()">Limpar campos</button>
-
-        <div>
+      <!-- Inicio dos Resultados -->
+      <div class="resultados">
+        <div class="cima">
+          <div class="nomeIdade">
             <h1 id="nome_tela"></h1>
             <h1 id="idade_tela"></h1>
-            <h1 id="sexo_tela"></h1>
+          </div>
+          <h1 id="sexo_tela"></h1>
+
+          <div class="pesoAltura">
             <h1 id="altura_tela"></h1>
             <h1 id="peso_tela"></h1>
-            <h1 id="resultado"></h1>
-            <h1 id="tabela"></h1>
+          </div>
         </div>
+        Seu IMC é:
+        <h1 id="resultado">0</h1>
+        <h1 id="tabela"></h1>
+      </div>
 
+      <!-- Fim dos Resultados -->
+
+      <button onclick="downloadPDF()">Gerar PDF</button>
     </div>
-
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

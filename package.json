@@ -1,0 +1,23 @@
+{
+  "name": "calculadora-imc",
+  "version": "1.0.0",
+  "description": "Calculadora de IMC com Gerador de PDF",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorviniciussantana/imc-pwa.git"
+  },
+  "author": "Igor Vinicius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igorviniciussantana/imc-pwa/issues"
+  },
+  "homepage": "https://github.com/igorviniciussantana/imc-pwa#readme",
+  "dependencies": {
+    "serve": "^14.0.1"
+  }
+}
