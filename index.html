@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Calculadora de imc</title>
+    <link rel="apple-touch-icon" href="" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <!--viewport para designers responsivos (mobo), content é a configuração-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="white" />
+</head>
+
+<body class="fullscreen">
+
+    <div class="container">
+        <label for="nome">Nome:</label><input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+        <label for="idade">Idade:</label><input type="text" id="idade" name="idade" placeholder="Digite sua idade">
+
+        <label for="sexo">Sexo:</label> <select id="sexo" name="sexo">
+            <option value="bota"></option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+
+        </select>
+
+        <label for="altura">Altura:</label><input type="number" id="altura" name="altura"
+            placeholder="Digite sua altura">
+
+        <label for="peso">Peso:</label><input type="number" id="peso" name="peso" placeholder="Digite seu peso">
+
+        <button id="calcular" type="button" onclick="calcular()">Calcular imc</button>
+
+        <button id="limpar" type="button" onclick="limpar()">Limpar campos</button>
+
+        <div>
+            <h1 id="nome_tela"></h1>
+            <h1 id="idade_tela"></h1>
+            <h1 id="sexo_tela"></h1>
+            <h1 id="altura_tela"></h1>
+            <h1 id="peso_tela"></h1>
+            <h1 id="resultado"></h1>
+            <h1 id="tabela"></h1>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

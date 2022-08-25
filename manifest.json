@@ -1,0 +1,16 @@
+{
+    "name": "Calculadora Imc",
+    "short_name": "Imc",
+    "icons": [
+        {
+            "src": "",
+            "sizes": "256x256",
+            "type": ""
+        }
+    ],
+    "lang": "pt-BR",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white"
+}
