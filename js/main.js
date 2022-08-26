@@ -1,9 +1,9 @@
-// window.onload = () => {
-//     "use strict";
-//     if ("serviceWorker" in navigator) {
-//         navigator.serviceWorker.register("./sw.js");
-//     }
-// };
+window.onload = () => {
+    "use strict";
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./sw.js");
+    }
+};
 
 
 function calcular() {
@@ -25,7 +25,7 @@ function calcular() {
     sexo_tela.textContent = sexo;
    altura_tela.textContent = altura + "m -";
    peso_tela.textContent = peso + "kg";
-    resultado.textContent = soma.toFixed(2);
+    resultado.textContent = Math.floor(soma);
 
     if (soma < 18.5) {
         tabela.style.color = "#FF3636"
@@ -38,7 +38,7 @@ function calcular() {
         tabela.textContent = "Peso normal";
 
     } else if (soma > 25.0 & soma < 29.9) {
-tabela.style.color = "#FFBB36"
+tabela.style.color = "#efff11"
         tabela.textContent = "Excesso de peso";
         
 
@@ -89,7 +89,7 @@ function downloadPDF() {
     const peso = document.getElementById("peso").value;
     const altura = document.getElementById("altura").value;
     const fileName = nome + '.pdf'
-
+    const soma = peso / (altura * altura);
   
 const div = document.createElement('div')
 
@@ -111,7 +111,7 @@ div.insertAdjacentHTML('afterbegin',
           </div>
         </div>
         Seu IMC é:
-        <h1 id="resultado">0</h1>
+        <h1 id="resultado">${Math.floor(soma)}</h1>
         <h1 id="tabela"></h1>
         <h1 class="generate">Gerado com <span>Calculadora IMC</span></h1>
       </div>
