@@ -4,12 +4,13 @@
   margin: 0;
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 .fullscreen {
   background-color: #1a1535;
-  width: 100%;
-  height: 100%;
+ 
+  padding: 20px;
 }
 
 .container {
@@ -26,7 +27,7 @@ h1 {
 
 .campos {
   display: flex;
-  width: 90vw;
+  width: 100%;
 flex-direction: column;
   background-color: #302a4e;
   border-radius: 8px;
@@ -99,7 +100,7 @@ padding: 10px 0;
 }
 .resultados {
   background-color: #ff8dd0;
-  width: 90vw;
+  width: 100%;
   padding: 30px 20px;
 
   display: flex;
@@ -168,10 +169,15 @@ display: flex;
 
 }
 
+button{
+
+  cursor: pointer;
+}
+
 #pdf{
 
   border: 0;
-width: 96vw;
+width: 100%;
 padding: 0px 20px;
 background-color: #FCFCF4;
   display: flex;
@@ -192,5 +198,43 @@ padding: 10px 0;
 border-right: 3px solid #1A1535;;
 padding-right: 5px;
 margin-right: 5px;
+
+}
+
+
+.file{
+  background-color: #ff8dd0;
+  width: 100%;
+  height: 1055px;
+  padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #FCFCF4;
+
+
+}
+
+.generate{
+
+color: #FCFCF4;
+
+}
+
+.generate span{
+
+color: #1A1535;
+
+
+}
+
+.fileTitle{
+
+color: #FCFCF4;
+font-size: 60px;
+
 
 }
