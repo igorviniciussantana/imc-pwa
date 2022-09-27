@@ -1,3 +1,8 @@
+<div align="center">
+<img src="https://user-images.githubusercontent.com/86114583/192540573-16049160-dcef-4b40-916a-a393d165f6e6.png" width="200px" align="center"/>
+</div>
+
+
 # 🧮 - Calculadora IMC
 
 Esse projeto consiste no desenvolvimento de uma calculadora para calcular o Índice de Massa Corporal de um indivíduo. Por ser uma PWA, além de sua alta performance, ela
