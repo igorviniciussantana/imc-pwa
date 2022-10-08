@@ -1,4 +1,5 @@
 let cacheName = "calculator-imc";
+
 let filesToCache = ["/", "/index.html", "/css/style.css", "/js/main.js", "/images/Vector.svg"];
 
 /* inicializando a service worker e fazendo o 
