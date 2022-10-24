@@ -49,13 +49,13 @@ Se os requisitos já estiverem cumpridos, siga os passos abaixo:
 Clone o projeto
 
 ```bash
-  git clone https://github.com/igorviniciussantana/imcpwa.git
+  git clone https://github.com/igorviniciussantana/imc-pwa.git
 ```
 
 Entre no diretório do projeto
 
 ```bash
-  cd imcpwa
+  cd imc-pwa
 ```
 
 Instale as dependências
