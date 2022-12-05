@@ -66,21 +66,6 @@ function limpar() {
 
 }
 
-// function downloadPDF() {
-//     const item = document.querySelector(".resultados");
-//     const nome = document.getElementById("nome").value;
-//     const fileName = nome + '.pdf'
-  
-//     var opt = {
-//       margin: 0,
-//       filename: fileName,
-//       html2canvas: { scale: 2},
-//       jsPDF: { unit: "cm", format: "letter", orientation: "portrait" },
-//     };
-  
-//     html2pdf().set(opt).from(item).save();
-//   }
-
 function downloadPDF() {
     const item = document.querySelector(".resultados");
     const nome = document.getElementById("nome").value;
