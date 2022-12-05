@@ -58,6 +58,7 @@ function downloadPDF() {
   const sexo = document.getElementById("sexo").value;
   const peso = document.getElementById("peso").value;
   const altura = document.getElementById("altura").value;
+  const data = new Date();
   const fileName = nome + ".pdf";
   const soma = peso / (altura * altura);
 
@@ -69,22 +70,24 @@ function downloadPDF() {
     `
 <div class="file">
 <h1 class="fileTitle">Relatório IMC</h1>
-        <div class="cima" id="cima">
-          <div class="nomeIdade">
-            <h1 id="nome_tela">${nome}, </h1>
-            <h1 id="idade_tela">${idade} anos</h1>
-          </div>
-          <h1 id="sexo_tela">${sexo}</h1>
 
-          <div class="pesoAltura">
-            <h1 id="altura_tela">${altura} - </h1>
-            <h1 id="peso_tela"> ${peso}</h1>
-          </div>
-        </div>
-        Seu IMC é:
-        <h1 id="resultado">${Math.floor(soma)}</h1>
-        <h1 id="tabela"></h1>
-        <h1 class="generate">Gerado com <span>Calculadora IMC</span></h1>
+<div class='dados'>
+<h2>Dados do Usuário</h2>
+<p><b>Nome:</b> ${nome}</p>
+<p><b>Idade:</b> ${idade} anos</p>
+<p><b>Sexo:</b> ${sexo}</p>
+<p><b>Altura:</b> ${altura}m</p>
+<p><b>Peso:</b> ${peso}kg</p>
+</div>
+
+<h2>Resultados</h2>
+
+<p>IMC: ${Math.floor(soma)} </p>
+<p>${tabela.textContent}</p>
+
+ <h1 class="generate">Gerado com <span>Calculadora IMC</span></h1>
+ <h1 class="generate">${data.toLocaleString()}</h1>
+
       </div>
 
 
@@ -98,3 +101,21 @@ function downloadPDF() {
     jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
   });
 }
+
+// <div class="cima" id="cima">
+//   <div class="nomeIdade">
+//     <h1 id="nome_tela">${nome}, </h1>
+//     <h1 id="idade_tela">${idade} anos</h1>
+//   </div>
+//   <h1 id="sexo_tela">${sexo}</h1>
+
+//   <div class="pesoAltura">
+//     <h1 id="altura_tela">${altura} - </h1>
+//     <h1 id="peso_tela"> ${peso}</h1>
+//   </div>
+// </div>
+// Seu IMC é:
+// <h1 id="resultado">${Math.floor(soma)}</h1>
+// <h1 id="tabela"></h1>
+// <h1 class="generate">Gerado com <span>Calculadora IMC</span></h1>
+// <h1 class="generate">${data.toLocaleString()}</h1>
