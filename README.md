@@ -20,6 +20,12 @@ Após o desenvolvimento, utilizamos a Vercel para fazer o deploy do nosso aplica
 
 - [Calculadora - Deploy](https://pwaimc.vercel.app)
 
+## 👁 - Demonstração
+
+<img src="https://user-images.githubusercontent.com/86114583/205641921-deec4b43-95f0-4a7f-9aef-b26e1522e9d5.png" width="200px"/>
+
+
+
 ## ⬇️ - Instalação
 
 Se você deseja instalar no seu computador, basta seguir os mesmos
